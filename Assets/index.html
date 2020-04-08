@@ -5,40 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Bootstrap Homework</title>
 </head>
 <body>
-    <div class="container">
-        <header>
+    <!-- This is my header -->
+    <header>
+        <div class="container">       
             <div class="row">
-                <div class="your-name">
+                <div class="your-name col-md">
                     <p>Andrew Morrow</p>
                 </div>
-                <nav class="main-menu">                   
-                    <ul class="menu-items">
-                        <li class="nav-item">
-                        <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+                <!-- This is my Nav bar -->
+                <div class="col-sm">
+                    <nav class="main-menu">                   
+                        <ul class="menu-items">
+                            <li class="nav-item">
+                            <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>  
             </div>
-        </header>
+        </div>
+    </header>
+    <!-- This is the main content -->
+    <div class="container" id="about-me-info">
+        <div class="row col-sm">
+            <h1 style="height: 50px; line-height: 50px; font-size: 30px; color: darkgreen;">About Me</h1>
+        </div>
+        <div class="row col-lg">
+            <img src="Images\Burgers.jpg" class="img-fluid" alt="Responsive image">
+            <p>
+                Full-Stack Web Development student living in Tucson, AZ. Interests include video games, cooking, golf, and apparently programming as I'm discovering! Grew up in the Pacific Northwest, born in Kirkland, WA in 1990 to Dan and Nancy Morrow. Lived in the Seattle area the first 10 years of my life and eventually moved to Oregon, where I went to school in McMinnville and graduated McMinnville High School in 2008.
+            </p>
+            <p>
+                After living in the Portland area for roughly 10 years, I moved to Tucson on a whim at the end of 2018. It's been the best move I've ever made as I was ready to get away from the constant rain! I love the sunshine down here, and as soon as we're all able to, I'm looking forward to being able to go out again!
+            </p>        
+        </div>
     </div>
-    <div class="container" id="main">
-        <h1>About Me</h1>
-        <p>content</p>
-     
-
-
+    <footer>
+        <div class="container">
+            <p>&copy;Andrew Morrow</p>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    </div>
+    
 </body>
 </html>

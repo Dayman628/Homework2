@@ -1,3 +1,4 @@
+/* CSS Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,6 +26,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    background-color: #e7e7e7;
+    font-family: 'Merriweather', serif;
 }
 ol, ul {
     list-style: none;
@@ -40,6 +43,22 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+header {
+    background-color: white;
+    max-width: 100%;
+}
+
+footer {
+    background-color: black;
+    color: crimson;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
 }
 
 * {
@@ -64,13 +83,23 @@ table {
 
 .main-menu li {
     display: inline-block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;    
 }
+
+.nav-link {
+    color: crimson;
+    font-weight: bolder;
+}
+
+header {
+    background-color: black;
+}
+
 
 #main {
     background-color: #e7e7e7;
 }
-
+/* Media Query for Mobile Browser */
 @media (max-width: 767px) {
     .your-name {
         width: 100%;
@@ -87,7 +116,7 @@ table {
         padding: 0;
     }
 }
-
+/* Media Query for Desktop Browser */
 @media (min-width: 768px) {
     .your-name {
         width: 25%;
@@ -106,7 +135,7 @@ table {
     }
 
     .main-menu ul li {
-        display: flex;
-        align-items: center;
+        vertical-align: center;
+        line-height: 60px;
     }
 }
